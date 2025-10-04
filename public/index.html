@@ -854,12 +854,12 @@
 
             const end_block = {
                 type: jsPsychHtmlKeyboardResponse,
-                stimulus: '<p>Thanks for participating! You will be now redirected to Prolific.</p>',
+                stimulus: '<p>Thanks for participating! You will be now redirected to Prolific in 10s.</p>',
                 choices:'NO_KEYS',
                 on_start: function (data) {
                     setTimeout(()=>{
                         window.location = "https://app.prolific.com/submissions/complete?cc=CLL8IJGA"
-                    }, 2000)
+                    }, 10000)
                 }
             }
 
